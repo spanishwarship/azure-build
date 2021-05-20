@@ -5,5 +5,5 @@ resources:
   - repository: PipelineTemplates
     type: github
     name: spanishwarship/azure-pipelines
-    endpoint: spaniswarhip
+    endpoint: 'spaniswarhip (2)'
     
