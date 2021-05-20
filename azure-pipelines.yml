@@ -9,3 +9,5 @@ resources:
     
 extends:
   template: _Template.yml@PipelineTemplates
+  parameters:
+    uservariablestemplate: vars.yml
