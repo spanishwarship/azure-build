@@ -6,5 +6,3 @@ resources:
     type: github
     name: spanishwarship/azure-pipelines
     
- extends:
-   template: _Template.yml@PipelineTemplates
