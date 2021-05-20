@@ -7,3 +7,5 @@ resources:
     name: spanishwarship/azure-pipelines
     endpoint: 'spanishwarship'
     
+extends:
+  template: _Template.yml@PipelineTemplates
