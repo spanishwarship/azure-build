@@ -1,13 +1,10 @@
-trigger:
-- main
+trigger: none
 
 resources:
   repositories:
   - repository: PipelineTemplates
     type: github
     name: spanishwarship/azure-pipelines
-    endpoint: 'spanishwarship'
-    ref: refs/head/main
     
  extends:
    template: _Template.yml@PipelineTemplates
