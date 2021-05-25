@@ -1,6 +1,6 @@
 trigger:
   branches: 
-    includes:
+    include:
     - master
   paths:
     include:
