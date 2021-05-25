@@ -6,16 +6,12 @@ trigger:
     include:
     - projectlist.txt
 
-resources:
-  repositories:
-  - repository: PipelineTemplates
-    type: github
-    name: spanishwarship/azure-pipelines
-    endpoint: 'spanishwarship'
+pool:
+  vmImage: 'ubuntu-latest'
   
 jobs:
   - job: 'Read file'
   steps:
   - script: |
-    cat projectlist.txt
+      cat projectlist.txt
     displayName: 'reading'
