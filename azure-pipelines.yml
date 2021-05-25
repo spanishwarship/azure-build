@@ -1,4 +1,10 @@
-trigger: none
+trigger:
+  branches: 
+    includes:
+    - master
+  paths:
+    include:
+    - projectlist.txt
 
 resources:
   repositories:
@@ -6,8 +12,10 @@ resources:
     type: github
     name: spanishwarship/azure-pipelines
     endpoint: 'spanishwarship'
-    
-extends:
-  template: _Template.yml@PipelineTemplates
-  parameters:
-    uservariablestemplate: vars.yml
+  
+jobs:
+  - job: 'Read file'
+  steps:
+  - script: |
+    cat projectlist.txt
+    displayName: 'reading'
