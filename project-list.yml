@@ -1,0 +1,6 @@
+pipelines:
+  repo:
+  - name: spfx-hide-webparts
+    path: /
+  - name: spfx-webparts
+    path: /
