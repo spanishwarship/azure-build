@@ -2,10 +2,7 @@ trigger:
   branches: 
     include:
     - main
-    - ref/tags/C*
-  paths:
-    include:
-    - projectlist.txt
+    - ref/tags/*
 
 variables:
 - name: tagname
