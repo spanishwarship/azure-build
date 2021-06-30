@@ -17,5 +17,6 @@ steps:
 - script: |
     echo "This is the tagname: $tagname"
     echo "this is the source branch: $Build.SourceBranch"
+    echo "This is the source branch: $BUILD_SOURCEBRANCH"
     cat projectlist.txt
   displayName: 'reading'
